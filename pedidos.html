@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- Inicio del documento HTML -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<head>
+    <!-- Configuración de caracteres para mostrar correctamente los textos -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Pedidos - Verde Vivo</title>
+</head>
+
+<body>
+
+    <!-- Menú de navegación entre las páginas del sitio -->
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+    </ul>
+
+    <!-- Título principal de la página -->
+    <h1>Realiza tu pedido en Verde Vivo</h1>
+
+    <!-- Texto que indica al cliente qué debe hacer -->
+    <p>Completa el siguiente formulario para contactarnos.</p>
+
+    <!-- Formulario que envía la información mediante el método POST -->
+    <form action="https://formsubmit.co/your-email@example.com" method="post">
+
+        <!-- Campo oculto que desactiva el CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false" />
+
+        <!-- Primer grupo de campos del formulario -->
+        <fieldset>
+
+            <!-- Nombre del grupo de campos -->
+            <legend>Información del cliente</legend>
+
+            <!-- Campo para escribir el nombre del cliente -->
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" />
+            </p>
+
+            <!-- Campo para escribir el correo electrónico -->
+            <p>
+                <label for="correo">Correo electrónico:</label>
+                <input type="text" id="correo" name="correo" />
+            </p>
+
+            <!-- Área de texto para escribir un mensaje -->
+            <p>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="30"></textarea>
+            </p>
+
+        </fieldset>
+
+        <!-- Segundo grupo de campos del formulario -->
+        <fieldset>
+
+            <!-- Nombre del grupo de campos -->
+            <legend>Detalles del pedido</legend>
+
+            <!-- Lista desplegable para seleccionar un producto -->
+            <p>
+                <label for="producto">Selecciona un producto:</label>
+
+                <select id="producto" name="producto">
+                    <option value="suculentas">Suculentas</option>
+                    <option value="cactus">Cactus</option>
+                    <option value="plantas ornamentales">Plantas ornamentales</option>
+                    <option value="macetas decorativas">Macetas decorativas</option>
+                </select>
+            </p>
+
+            <!-- Pregunta sobre la ocasión del pedido -->
+            <p>¿Para qué ocasión necesitas el producto?</p>
+
+            <!-- Opción de selección única: cumpleaños -->
+            <p>
+                <input type="radio" id="cumpleanos" name="ocasion" value="cumpleanos" />
+                <label for="cumpleanos">Cumpleaños</label>
+            </p>
+
+            <!-- Opción de selección única: aniversario -->
+            <p>
+                <input type="radio" id="aniversario" name="ocasion" value="aniversario" />
+                <label for="aniversario">Aniversario</label>
+            </p>
+
+            <!-- Opción de selección única: decoración del hogar -->
+            <p>
+                <input type="radio" id="decoracion" name="ocasion" value="decoracion" />
+                <label for="decoracion">Decoración del hogar</label>
+            </p>
+
+            <!-- Casilla para aceptar las condiciones del pedido -->
+            <p>
+                <input type="checkbox" id="acepto" name="acepto" value="si" />
+                <label for="acepto">Acepto las condiciones del pedido</label>
+            </p>
+
+        </fieldset>
+
+        <!-- Botón para enviar el formulario y botón para limpiar los campos -->
+        <p>
+            <input type="submit" value="Enviar pedido" />
+            <input type="reset" value="Limpiar formulario" />
+        </p>
+
+    </form>
+
+</body>
+</html>

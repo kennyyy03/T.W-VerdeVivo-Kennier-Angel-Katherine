@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- Inicio del documento XHTML -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<head>
+    <!-- Configuración de caracteres para mostrar correctamente los textos -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Verde Vivo - Catálogo</title>
+</head>
+
+<body>
+
+    <!-- Menú de navegación para acceder a las páginas del sitio -->
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="pedidos.html">Pedidos</a></li>
+    </ul>
+
+    <!-- Título principal de la página -->
+    <h1>Catálogo de Verde Vivo</h1>
+
+    <!-- Subtítulo de presentación de los productos -->
+    <h2>Nuestros productos</h2>
+
+    <!-- Descripción breve de los productos que ofrece el negocio -->
+    <p>Ofrecemos plantas y accesorios para decorar tu hogar.</p>
+
+    <!-- Título de la tabla con los productos y sus precios -->
+    <h2>Tabla de productos y precios</h2>
+
+    <!-- Tabla que muestra los productos y sus respectivos precios -->
+    <table border="1">
+        <!-- Título descriptivo de la tabla -->
+        <caption>Lista de precios de Verde Vivo</caption>
+
+        <!-- Encabezados de las columnas -->
+        <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Precio</th>
+        </tr>
+
+        <!-- Primera fila: suculentas -->
+        <tr>
+            <td>Suculentas</td>
+            <td>B/. 3.00</td>
+        </tr>
+
+        <!-- Segunda fila: cactus -->
+        <tr>
+            <td>Cactus</td>
+            <td>B/. 4.00</td>
+        </tr>
+
+        <!-- Tercera fila: plantas ornamentales -->
+        <tr>
+            <td>Plantas ornamentales</td>
+            <td>B/. 8.00</td>
+        </tr>
+
+        <!-- Cuarta fila: macetas decorativas -->
+        <tr>
+            <td>Macetas decorativas</td>
+            <td>B/. 5.00</td>
+        </tr>
+    </table>
+
+    <!-- Título de la sección del horario de atención -->
+    <h2>Horario de atención</h2>
+
+    <!-- Tabla que organiza los días y horarios del negocio -->
+    <table border="1"
+           summary="Horario de atención de Verde Vivo durante la semana y los fines de semana.">
+
+        <!-- Título descriptivo de la tabla -->
+        <caption>Horario de atención de Verde Vivo</caption>
+
+        <!-- Encabezados de las columnas -->
+        <tr>
+            <th scope="col">Días</th>
+            <th scope="col">Horario</th>
+        </tr>
+
+        <!-- Horario de lunes a viernes -->
+        <tr>
+            <th scope="row">Lunes a viernes</th>
+            <td>8:00 a. m. - 5:00 p. m.</td>
+        </tr>
+
+        <!-- La propiedad rowspan une dos filas para el fin de semana -->
+        <tr>
+            <th scope="row" rowspan="2">Fin de semana</th>
+            <td>Sábado: 8:00 a. m. - 12:00 p. m.</td>
+        </tr>
+
+        <!-- Segunda fila correspondiente al fin de semana -->
+        <tr>
+            <td>Domingo: Cerrado</td>
+        </tr>
+
+        <!-- La propiedad colspan permite unir dos columnas -->
+        <tr>
+            <th scope="row">Horario especial</th>
+            <td colspan="2">Consultar disponibilidad por teléfono.</td>
+        </tr>
+
+    </table>
+
+    <!-- Línea horizontal para separar las secciones -->
+    <hr />
+
+    <!-- Sección donde se muestran imágenes de los productos -->
+    <h2>Imágenes de nuestros productos</h2>
+
+    <!-- Nombre del primer producto que aparece en la imagen -->
+    <p>Planta ornamental:</p>
+
+    <!-- Imagen de una planta ornamental con texto alternativo y dimensiones -->
+    <p>
+        <img src="../imagenes/tipos_de_cactus_de_interior_51117_orig.jpg"
+             alt="Planta ornamental utilizada para decorar el hogar"
+             width="250"
+             height="180" />
+    </p>
+
+    <!-- Nombre del segundo producto que aparece en la imagen -->
+    <p>Suculenta:</p>
+
+    <!-- Imagen de una suculenta que funciona como enlace a la página de contacto -->
+    <p>
+        <a href="contacto.html">
+            <img src="../imagenes/images.jpg"
+                 alt="Suculenta decorativa en una maceta"
+                 width="250"
+                 height="180" />
+        </a>
+    </p>
+
+    <!-- Sección que muestra una imagen con contenido alternativo -->
+    <h2>Imagen con contenido alternativo</h2>
+
+    <!-- Objeto que intenta mostrar una imagen en formato WebP -->
+    <object data="../imagenes/WhatsApp_Image_2024-04-11_at_09.47.15.webp"
+            type="image/webp"
+            width="250"
+            height="180">
+
+        <!-- Imagen alternativa que aparece si el objeto no se puede mostrar -->
+        <img src="../imagenes/tipos_de_cactus_de_interior_51117_orig.jpg"
+             alt="Imagen alternativa de una planta decorativa"
+             width="250"
+             height="180" />
+
+    </object>
+
+    <!-- Línea horizontal para separar las secciones -->
+    <hr />
+
+    <!-- Sección que explica los pasos para realizar un pedido -->
+    <h2>Pasos para hacer un pedido</h2>
+
+    <!-- Lista ordenada que muestra los pasos en orden numérico -->
+    <ol>
+        <li>Seleccionar el producto que deseas.</li>
+        <li>Consultar la disponibilidad del producto.</li>
+        <li>Contactarnos para realizar la solicitud.</li>
+        <li>Confirmar los detalles del pedido.</li>
+    </ol>
+
+    <!-- Enlace que lleva directamente a la página de pedidos -->
+    <p>
+        <a href="pedidos.html">Iniciar pedido</a>
+    </p>
+
+    <!-- Sección que presenta algunas definiciones relacionadas con el negocio -->
+    <h2>Definiciones</h2>
+
+    <!-- Lista de definiciones utilizando dl, dt y dd -->
+    <dl>
+        <!-- Término y su definición -->
+        <dt>Suculenta</dt>
+        <dd>Planta que almacena agua en sus hojas o tallos.</dd>
+
+        <!-- Término y su definición -->
+        <dt>Maceta</dt>
+        <dd>Recipiente utilizado para cultivar plantas.</dd>
+
+        <!-- Término y su definición -->
+        <dt>Jardinería</dt>
+        <dd>Actividad dedicada al cuidado y cultivo de plantas.</dd>
+    </dl>
+
+</body>
+</html>

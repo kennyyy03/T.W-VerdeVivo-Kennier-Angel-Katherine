@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- Inicio del documento HTML y configuración del idioma español -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+
+<!-- Inicio de la cabecera del documento -->
+<head>
+
+    <!-- Define el tipo de caracteres para permitir tildes y caracteres especiales -->
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8" />
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Pedidos - Verde Vivo</title>
+
+<!-- Fin de la cabecera -->
+</head>
+
+<!-- Inicio del contenido visible de la página -->
+<body>
+
+    <!-- Título principal de la página de pedidos -->
+    <h1>Realiza tu pedido en Verde Vivo</h1>
+
+    <!-- Párrafo que indica al usuario qué debe hacer -->
+    <p>Completa el siguiente formulario para contactarnos.</p>
+
+    <!-- Formulario que envía los datos al correo indicado utilizando el método POST -->
+    <form action="https://formsubmit.co/luisitolobo@gmail.com" method="post">
+
+        <!-- Campo oculto que desactiva la verificación CAPTCHA -->
+        <input type="hidden" name="_captcha" value="false" />
+
+        <!-- Párrafo que contiene el campo para escribir el nombre -->
+        <p>
+
+            <!-- Etiqueta que identifica el campo del nombre -->
+            <label for="nombre">Nombre:</label>
+
+            <!-- Campo de texto donde el usuario escribe su nombre -->
+            <input type="text" id="nombre" name="nombre" />
+        </p>
+
+        <!-- Párrafo que contiene el campo del correo electrónico -->
+        <p>
+
+            <!-- Etiqueta que identifica el campo del correo -->
+            <label for="correo">Correo electrónico:</label>
+
+            <!-- Campo de texto para escribir el correo electrónico -->
+            <input type="text" id="correo" name="correo" />
+        </p>
+
+        <!-- Párrafo que contiene el espacio para escribir un mensaje -->
+        <p>
+
+            <!-- Etiqueta que identifica el campo del mensaje -->
+            <label for="mensaje">Mensaje:</label>
+
+            <!-- Área de texto que permite escribir mensajes de varias líneas -->
+            <textarea id="mensaje" name="mensaje" rows="5" cols="30"></textarea>
+        </p>
+
+        <!-- Párrafo que contiene la lista de productos disponibles -->
+        <p>
+
+            <!-- Etiqueta que indica que se debe seleccionar un producto -->
+            <label for="producto">Selecciona un producto:</label>
+
+            <!-- Menú desplegable para elegir un producto -->
+            <select id="producto" name="producto">
+
+                <!-- Primera opción del menú -->
+                <option value="cactus">Cactus</option>
+
+                <!-- Segunda opción del menú -->
+                <option value="suculenta">Suculenta</option>
+
+                <!-- Tercera opción del menú -->
+                <option value="planta">Planta ornamental</option>
+
+            </select>
+        </p>
+
+        <!-- Texto que indica las opciones del tipo de entrega -->
+        <p>Tipo de entrega:</p>
+
+        <!-- Primera opción para seleccionar el tipo de entrega -->
+        <p>
+
+            <!-- Botón de selección para recibir el pedido a domicilio -->
+            <input type="radio" id="domicilio" name="entrega" value="domicilio" />
+
+            <!-- Texto que identifica la opción de entrega a domicilio -->
+            <label for="domicilio">A domicilio</label>
+        </p>
+
+        <!-- Segunda opción para seleccionar el tipo de entrega -->
+        <p>
+
+            <!-- Botón de selección para retirar el pedido en la tienda -->
+            <input type="radio" id="tienda" name="entrega" value="tienda" />
+
+            <!-- Texto que identifica la opción de retirar en tienda -->
+            <label for="tienda">Retirar en tienda</label>
+        </p>
+
+        <!-- Párrafo que contiene una casilla de verificación -->
+        <p>
+
+            <!-- Casilla que permite aceptar las condiciones del pedido -->
+            <input type="checkbox" id="acepto" name="acepto" value="si" />
+
+            <!-- Texto que explica qué está aceptando el usuario -->
+            <label for="acepto">Acepto las condiciones del pedido</label>
+        </p>
+
+        <!-- Párrafo que contiene los botones para enviar y limpiar el formulario -->
+        <p>
+
+            <!-- Botón que envía los datos del formulario -->
+            <input type="submit" value="Enviar pedido" />
+
+            <!-- Botón que limpia todos los campos del formulario -->
+            <input type="reset" value="Limpiar formulario" />
+        </p>
+
+    <!-- Cierre del formulario -->
+    </form>
+
+<!-- Cierre del cuerpo del documento -->
+</body>
+
+<!-- Cierre del documento HTML -->
+</html>

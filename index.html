@@ -1,136 +1,115 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<!-- Inicio del documento HTML y configuración del idioma español -->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 
-<!-- Inicio de la cabecera del documento -->
 <head>
-
-    <!-- Define el tipo de caracteres para permitir tildes y caracteres especiales -->
-    <meta http-equiv="Content-Type"
-          content="text/html; charset=utf-8" />
-
-    <!-- Título que aparece en la pestaña del navegador -->
-    <title>Pedidos - Verde Vivo</title>
-
-<!-- Fin de la cabecera -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Verde Vivo - Inicio</title>
 </head>
 
-<!-- Inicio del contenido visible de la página -->
 <body>
 
-    <!-- Título principal de la página de pedidos -->
-    <h1>Realiza tu pedido en Verde Vivo</h1>
 
-    <!-- Párrafo que indica al usuario qué debe hacer -->
-    <p>Completa el siguiente formulario para contactarnos.</p>
+        <div id="menu">
 
-    <!-- Formulario que envía los datos al correo indicado utilizando el método POST -->
-    <form action="https://formsubmit.co/luisitolobo@gmail.com" method="post">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="paginas/catalogo.html">Catálogo</a></li>
+            <li><a href="paginas/contacto.html">Contacto</a></li>
+            <li><a href="paginas/pedidos.html">Pedidos</a></li>
+        </ul>
 
-        <!-- Campo oculto que desactiva la verificación CAPTCHA -->
-        <input type="hidden" name="_captcha" value="false" />
+    </div>
 
-        <!-- Párrafo que contiene el campo para escribir el nombre -->
+    <div id="encabezado" class="principal">
+
+        <h1>Verde Vivo</h1>
+
+        <h2>Plantas y decoración natural</h2>
+
+    </div>
+
+    <div id="contenido" class="informacion">
+
+        <h2>Bienvenidos a Verde Vivo</h2>
+
         <p>
-
-            <!-- Etiqueta que identifica el campo del nombre -->
-            <label for="nombre">Nombre:</label>
-
-            <!-- Campo de texto donde el usuario escribe su nombre -->
-            <input type="text" id="nombre" name="nombre" />
+            En <strong>Verde Vivo</strong> ofrecemos plantas ornamentales,
+            suculentas y macetas para decorar tu hogar.
         </p>
 
-        <!-- Párrafo que contiene el campo del correo electrónico -->
         <p>
-
-            <!-- Etiqueta que identifica el campo del correo -->
-            <label for="correo">Correo electrónico:</label>
-
-            <!-- Campo de texto para escribir el correo electrónico -->
-            <input type="text" id="correo" name="correo" />
+            Nuestro objetivo es crear espacios
+            <em>naturales, agradables y llenos de vida</em>.
         </p>
 
-        <!-- Párrafo que contiene el espacio para escribir un mensaje -->
+        <blockquote>
+            <p>Las plantas aportan belleza y frescura a cualquier espacio.</p>
+        </blockquote>
+
+        <hr />
+
+        <h2>Nuestros productos destacados</h2>
+
+        <div class="tarjeta">
+
+            <h3>Suculentas</h3>
+
+            <p>
+                Plantas decorativas que almacenan agua en sus hojas
+                y son ideales para el hogar.
+            </p>
+
+        </div>
+
+        <div class="tarjeta">
+
+            <h3>Plantas ornamentales</h3>
+
+            <p>
+                Plantas naturales que ayudan a decorar y dar vida
+                a diferentes espacios.
+            </p>
+
+        </div>
+
+        <hr />
+
+        <h2>Enlaces de interés</h2>
+
         <p>
-
-            <!-- Etiqueta que identifica el campo del mensaje -->
-            <label for="mensaje">Mensaje:</label>
-
-            <!-- Área de texto que permite escribir mensajes de varias líneas -->
-            <textarea id="mensaje" name="mensaje" rows="5" cols="30"></textarea>
+            Aprende más sobre las plantas en
+            <a href="https://www.rhs.org.uk/plants">
+                este sitio de plantas
+            </a>.
         </p>
 
-        <!-- Párrafo que contiene la lista de productos disponibles -->
         <p>
-
-            <!-- Etiqueta que indica que se debe seleccionar un producto -->
-            <label for="producto">Selecciona un producto:</label>
-
-            <!-- Menú desplegable para elegir un producto -->
-            <select id="producto" name="producto">
-
-                <!-- Primera opción del menú -->
-                <option value="cactus">Cactus</option>
-
-                <!-- Segunda opción del menú -->
-                <option value="suculenta">Suculenta</option>
-
-                <!-- Tercera opción del menú -->
-                <option value="planta">Planta ornamental</option>
-
-            </select>
+            <a href="paginas/contacto.html#horario">
+                Ver nuestro horario de atención
+            </a>
         </p>
 
-        <!-- Texto que indica las opciones del tipo de entrega -->
-        <p>Tipo de entrega:</p>
+    </div>
 
-        <!-- Primera opción para seleccionar el tipo de entrega -->
+    <div id="pie">
+
+        <p>Verde Vivo - Plantas y Decoración Natural</p>
+
         <p>
-
-            <!-- Botón de selección para recibir el pedido a domicilio -->
-            <input type="radio" id="domicilio" name="entrega" value="domicilio" />
-
-            <!-- Texto que identifica la opción de entrega a domicilio -->
-            <label for="domicilio">A domicilio</label>
+            Correo:
+            <a href="mailto:verdevivo@ejemplo.com">
+                verdevivo@ejemplo.com
+            </a>
         </p>
 
-        <!-- Segunda opción para seleccionar el tipo de entrega -->
         <p>
-
-            <!-- Botón de selección para retirar el pedido en la tienda -->
-            <input type="radio" id="tienda" name="entrega" value="tienda" />
-
-            <!-- Texto que identifica la opción de retirar en tienda -->
-            <label for="tienda">Retirar en tienda</label>
+            Teléfono:
+            <a href="tel:64014394">64014394</a>
         </p>
 
-        <!-- Párrafo que contiene una casilla de verificación -->
-        <p>
+    </div>
 
-            <!-- Casilla que permite aceptar las condiciones del pedido -->
-            <input type="checkbox" id="acepto" name="acepto" value="si" />
-
-            <!-- Texto que explica qué está aceptando el usuario -->
-            <label for="acepto">Acepto las condiciones del pedido</label>
-        </p>
-
-        <!-- Párrafo que contiene los botones para enviar y limpiar el formulario -->
-        <p>
-
-            <!-- Botón que envía los datos del formulario -->
-            <input type="submit" value="Enviar pedido" />
-
-            <!-- Botón que limpia todos los campos del formulario -->
-            <input type="reset" value="Limpiar formulario" />
-        </p>
-
-    <!-- Cierre del formulario -->
-    </form>
-
-<!-- Cierre del cuerpo del documento -->
 </body>
-
-<!-- Cierre del documento HTML -->
 </html>
